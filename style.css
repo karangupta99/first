@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}html,body{
+    width: 100%;
+  height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 20px;
+}
+#logo img{
+    height: 20px;
+    width: 20px;
+
+}
+
+#logo h5{
+    margin-left: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: rubik;
+    font-weight: 600;
+
+}
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+a{
+    font-size: 15px;
+    font-family: rubik;
+    font-weight: 450;
+     color: black;
+    text-decoration: none;
+}
+#right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#right button{
+    padding: 6px 10px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 480;
+    margin:  0  10px ;
+}
+#right a{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0  -5px;
+}
+#centertext{
+    margin-top:20px ;
+    text-align: center;
+   height: 35%;
+   width: 100%;
+   
+}
+#centertext h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+    line-height:70px;
+
+}
+#centertext p{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#main #footer{
+    height:calc(100% - (35% + 80px));
+    width: 100%;
+    padding-left: 5px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between; 
+    padding: 30px;
+
+  
+}
+#footer .card{
+    height: 80%;
+    width: 19%;
+  
+    border-radius: 20px;
+    border: none;
+}
+#footer .card:nth-child(2){
+    height: 80%;
+     background-image: url(https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: 0 25%;
+}
+#footer .card:nth-child(3){
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+
+}
+#footer .card:nth-child(3) #top{
+  height: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    justify-content: end;
+}
+
+  #footer .card:nth-child(3) #top button{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #footer .card:nth-child(3) #top h5{
+    
+    background-color: antiquewhite;
+     width: fit-content;
+     padding: 10px 20px;
+     font-weight: 800;
+     border: 10px;
+  }
+  #footer .card:nth-child(3) #btm h3{
+    height: 100%;
+    padding: 40px 60px;
+    font-size: 20px;
+    background-color: rgba(0, 128, 0, 0.285);
+    font-family: rubik;
+    font-weight: 800;
+    padding-bottom: 20%;
+    border-radius: 20px;
+  }
+  #footer .card:nth-child(5){
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHN0dWR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+     overflow: hidden;
+  }
+  #footer .card:nth-child(5) #overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.183);
+    
+    
+  }
+  #footer .card:nth-child(5) #overlay h5{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    padding-left: 20px;
+  }
+  
+  #footer .card:nth-child(5) #overlay #play{
+     display: flex;
+     gap: 10px;
+   padding-top: 140px;
+   align-items: center;
+
+    
+  }
+
+  #footer .card:nth-child(5) #overlay #play h4{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: apple;
+
+  }
+  #footer .card:nth-child(5) #overlay #play i{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+  }
+  #footer .card:nth-child(1)
+{
+      height: 100%;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.949);
+     
+ }
+ #footer .card:nth-child(1) h5{
+  font-size: 15px;
+  padding: 10px 15px;
+  color: white;
+  opacity: 0.3;
+ }
+ #footer .card:nth-child(1) h2{
+  font-size: 22px;
+  color: whitesmoke;
+  font-family: rubik;
+  font-weight: 700;
+  padding: 3px 20px;
+
+ }
+ #footer .card:nth-child(1) #dates {
+   margin: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+ }
+ #footer .card:nth-child(1) #dates .arrow {
+  color: white;
+  opacity: 0.6;
+  font-size: 15px;
+  margin: 5px;
+   
+ }
+ #footer .card:nth-child(1) #dates .tarik{
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 px;
+  
+ }
+ #footer .card:nth-child(1) #dates .tarik h4{
+  color: white;
+  opacity: 0.6;
+  font-size: 12px;
+  padding: 2px 10px;
+ }
+ #footer .card:nth-child(1) #dates .tarik h5{
+  font-size: 22px;
+  color: white;
+  opacity: 0.8;
+ }
+ #footer .card:nth-child(1) #dates .tarikselected{
+  background-color: rgba(32, 29, 29, 0.498);
+  border-radius: 10px;
+  padding: 0px px;
+ }
+ #footer .card:nth-child(1) #dates .tarikselected h4{
+  font-size: 10px;
+  color: white;
+  opacity: 0.6;
+  padding: 3px 17px;
+ }
+ #footer .card:nth-child(1) #dates .tarikselected h5{
+        font-size: 22px;
+        color: white;
+        opacity: 0.8;
+ }
+ #footer .card:nth-child(1) #time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+ #footer .card:nth-child(1) #time h4{
+  color: white;
+  font-size: 15px;
+  opacity: 0.6;
+   margin-top: -10%;
+  
+ }
+ #footer .card:nth-child(1) #time .time-space{
+  background-color: rgb(0, 255, 38);
+  border-radius: 10px;
+  padding: 10px 25px;
+ }
+ #footer .card:nth-child(1) #time .time-space .check{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+ }
+ #footer .card:nth-child(1) #time .time-space .check i{
+  font-size: 30px;
+
+ }
+ #footer .card:nth-child(1) #time .time-space .check h3{
+  opacity: 0.6;
+ }
+ #footer .card:nth-child(1) #time-box{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+ }
+ #footer .card:nth-child(1) #time-box h4{
+  color: white;
+  font-size: 15px;
+  opacity: 0.6;
+  margin-top: -10px;
+ } 
+ #footer .card:nth-child(1) #time-box .time-compex{
+            background-color: cadetblue;
+            padding: 10px 25px;
+            border-radius: 10px;
+            margin-top: 10px;
+            
+ }
+    #footer .card:nth-child(1) #time-box .time-compex .time-man{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+   }
+    #footer .card:nth-child(1) #time-box .time-compex .time-man i{
+    font-size: 30px;   
+   }
+     #footer .card:nth-child(1) #time-box .time-compex .time-man h3{
+        
+        opacity: 0.5;
+  }
+     #footer .card:nth-child(4){
+      height: 75%;
+      background-color: rgba(98, 15, 98, 0.641);
+   }
+    #footer .card:nth-child(4) #photo{
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+   }
+
+    #footer .card:nth-child(4) #photo img{
+    
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+  }
+    #footer .card:nth-child(4) #photo h2{
+      font-size: 30px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 600;
+      padding: 5px;
+  }
+    #footer .card:nth-child(4) #photo h4{
+      font-size: 15px;
+      margin-bottom: -4%;
+  }
+    #footer .card:nth-child(4) h3{
+      font-size: 27px;
+      font-family: rubik;
+      font-weight: 400;
+  }
+    #footer .card:nth-child(4) #box1{
+      padding:8px 10px ;
+      flex-direction: row;
+      border-radius: 20px;
+      background-color: black;
+      margin: 10px 10px;
+      display: flex;
+      align-items: center;
+       gap: 15px;
+      
+  }
+    #footer .card:nth-child(4) #box1 .date {
+      background-color: chartreuse;
+      padding: 5px 12px;
+      border-radius: 10px;
+   }
+    #footer .card:nth-child(4) #box1 .date h3{
+      font-size: 18px;
+      color: white;
+
+   }
+    #footer .card:nth-child(4) #box1 .date h2{
+      font-size: 20px;
+      color: white;
+      font-family: rubik;
+      font-weight: 600;
+
+    }
+
+    
+    #footer .card:nth-child(4) #box1 .design h2{
+      font-size: 25px;
+      color: white;
+      opacity: 0.7;
+    }
+    #footer .card:nth-child(4) #box1 .design h4{
+      font-size: 14px;
+      color: white;
+      opacity: 0.6;
+
+    }
+
+
+
+  
+ 
